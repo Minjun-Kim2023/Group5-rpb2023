@@ -12,5 +12,10 @@ def divide(x,y):
 	else:
 		return x/y
 
+def minus(x,y):
+	return x-y
+
+def multi(x,y):
+	return x*y
 
 main()
