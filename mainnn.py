@@ -10,7 +10,7 @@ from std_msgs.msg import Header
 red_lower = (0, 0, 100)
 red_upper = (100, 100, 255)
 blue_lower = (100, 0, 0)
-blue_upper = (255, 100, 100)
+blue_upper = (255, 200, 200)
 green_lower = (0, 100, 0)
 green_upper = (100, 255, 100)
 yellow_lower = (0, 100, 100)
@@ -70,4 +70,3 @@ if __name__ == '__main__':
     detector = DetermineColor()
     rospy.init_node('CompressedImages1', anonymous=False)
     rospy.spin()
-
