@@ -48,13 +48,15 @@ class DetermineColor:
             if ((red_pixels>=blue_pixels)&(red_pixels>=green_pixels)&(red_pixels>=yellow_pixels)):
             	print("red!")
             	msg.frame_id = '-1'
+            	#print(msg.frame_id)
             elif((blue_pixels>=red_pixels)&(blue_pixels>=green_pixels)&(blue_pixels>=yellow_pixels)):
             	print("blue!")
             	msg.frame_id = '1'
+            	#print(msg.frame_id)
             else: 
             	print("unknown!")
             	msg.frame_id = '0'
-
+            	#print(msg.frame_id)
             cv2.waitKey(1)
             self.color_pub.publish(msg)
             
