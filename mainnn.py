@@ -46,15 +46,15 @@ class DetermineColor:
             #print(red_pixels, blue_pixels, yellow_mask, green_mask)
             
             if ((red_pixels>=blue_pixels)&(red_pixels>=green_pixels)&(red_pixels>=yellow_pixels)):
-            	print("red!")
+            	#print("red!")
             	msg.frame_id = '-1'
             	#print(msg.frame_id)
             elif((blue_pixels>=red_pixels)&(blue_pixels>=green_pixels)&(blue_pixels>=yellow_pixels)):
-            	print("blue!")
+            	#print("blue!")
             	msg.frame_id = '1'
             	#print(msg.frame_id)
             else: 
-            	print("unknown!")
+            	#print("unknown!")
             	msg.frame_id = '0'
             	#print(msg.frame_id)
             cv2.waitKey(1)
