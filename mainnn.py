@@ -9,7 +9,7 @@ from std_msgs.msg import Header
 
 red_lower = (0, 0, 100)
 red_upper = (100, 100, 255)
-blue_lower = (100, 0, 0)
+blue_lower = (70, 0, 0)
 blue_upper = (255, 200, 200)
 green_lower = (0, 100, 0)
 green_upper = (100, 255, 100)
