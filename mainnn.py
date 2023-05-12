@@ -29,7 +29,7 @@ class DetermineColor:
             image = self.bridge.imgmsg_to_cv2(data, 'bgr8')
             msg = Header()
             msg = data.header
-            msg.frame_id = '+1'  # default: STOp      
+            msg.frame_id = '0'  # default: STOp      
             cv2.imshow('Image', image)
             
             
@@ -51,7 +51,7 @@ class DetermineColor:
             	#print(msg.frame_id)
             elif((blue_pixels>=red_pixels)&(blue_pixels>=green_pixels)&(blue_pixels>=yellow_pixels)):
             	#print("blue!")
-            	msg.frame_id = '1'
+            	msg.frame_id = '+1'
             	#print(msg.frame_id)
             else: 
             	#print("unknown!")
