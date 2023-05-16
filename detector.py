@@ -69,10 +69,7 @@ class DetermineColor:
             yellow_pixels = cv2.countNonZero(yellow_part)
             green_pixels = cv2.countNonZero(green_part)
             white_pixels = cv2.countNonZero(white_part)
-            
-            
-
-            # print(f'빨강 : {red_pixels}, 파랑 : {blue_pixels}, 노랑 : {yellow_pixels}, 초록 : {green_pixels}, 하양 : {white_pixels}, 검정 : {black_pixels}')
+            print(f'빨강 : {red_pixels}, 파랑 : {blue_pixels}, 노랑 : {yellow_pixels}, 초록 : {green_pixels}, 하양 : {white_pixels}')
             
             #print(red_pixels, blue_pixels, yellow_mask, green_mask)
             
